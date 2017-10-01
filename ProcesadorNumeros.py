@@ -3,7 +3,7 @@ class ProcesadorNumeros:
         if (cadena==""):
             cantidad=0
         elif ("," in cadena):
-            cantidad=2
+            cantidad=len(cadena.split(","))
         else: 
             cantidad=1
         return {cantidad, 0, 0, 0}
