@@ -15,4 +15,5 @@ class ProcesadorNumeros:
             for n in numeros:
                 if (minimo > int(n)):
                     minimo = int(n)
-        return {cantidad, minimo, 0, 0}
+        maximo = 0;
+        return {cantidad, minimo, maximo, 0}
