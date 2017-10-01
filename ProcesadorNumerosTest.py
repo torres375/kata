@@ -23,3 +23,9 @@ class ProcesadorNumerosTest(TestCase):
     def test_procesarMinimo(self):
         result = {0, 0, 0, 0}
         self.assertEqual(ProcesadorNumeros().procesar(""), result, "Cadena vacia");
+        
+        
+    def test_procesarMinimo1numero(self):
+        result = {1, 4, 0, 0}
+        self.assertEqual(ProcesadorNumeros().procesar("4"), result, "Cadena Con Un Numero");
+
