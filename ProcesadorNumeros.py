@@ -1,3 +1,3 @@
 class ProcesadorNumeros:
-    def procesar(cadena):
-        pass
+    def procesar(self, cadena):
+        return {0, 0, 0, 0}
