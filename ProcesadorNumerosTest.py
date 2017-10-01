@@ -17,5 +17,5 @@ class ProcesadorNumerosTest(TestCase):
         self.assertEqual(ProcesadorNumeros().procesar("9,-1"), result, "Cadena Con dos Numeros");
 
     def test_procesarCadenaconNNumerosCantidad(self):
-        result = {5, -1, 0, 0}
+        result = {5, -1, 8, 0}
         self.assertEqual(ProcesadorNumeros().procesar("2,4,-1,6,8"), result, "Cadena Con N Numeros");

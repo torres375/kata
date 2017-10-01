@@ -6,7 +6,7 @@ class ProcesadorNumeros:
             cantidad=len(cadena.split(","))
         else:
             cantidad = 1
-        maximo = 0;
+        maximo = 0
         minimo = 0
         if(len(cadena)==1):
             minimo= int(cadena)
@@ -16,5 +16,7 @@ class ProcesadorNumeros:
             for n in numeros:
                 if (minimo > int(n)):
                     minimo = int(n)
+                if (maximo < int(n)):
+                    maximo = int(n)
 
         return {cantidad, minimo, maximo, 0}
