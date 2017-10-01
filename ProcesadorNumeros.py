@@ -11,6 +11,10 @@ class ProcesadorNumeros:
         elif(len(cadena)==1):
             minimo= int(cadena)
         else:
-            minimo= 0
+            minimo = 0;
+            numeros = cadena.split(",")
+            for n in numeros:
+                if (minimo > int(n)):
+                    minimo = int(n)
         return {cantidad, minimo, 0, 0}
 
