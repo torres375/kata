@@ -6,4 +6,5 @@ class ProcesadorNumeros:
             cantidad=len(cadena.split(","))
         else: 
             cantidad=1
-        return {cantidad, 0, 0, 0}
+        minimo = 0
+        return {cantidad, minimo, 0, 0}
