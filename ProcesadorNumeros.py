@@ -6,15 +6,13 @@ class ProcesadorNumeros:
             cantidad=len(cadena.split(","))
         else:
             cantidad = 1
-        if (cadena==""):
-            minimo = 0
-        elif(len(cadena)==1):
+
+        minimo = 0
+        if(len(cadena)==1):
             minimo= int(cadena)
-        else:
-            minimo = 0;
+        elif(len(cadena)>1):
             numeros = cadena.split(",")
             for n in numeros:
                 if (minimo > int(n)):
                     minimo = int(n)
         return {cantidad, minimo, 0, 0}
-
