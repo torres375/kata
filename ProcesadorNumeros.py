@@ -8,13 +8,17 @@ class ProcesadorNumeros:
             cantidad = 1
         maximo = 0
         minimo = 0
-        sumatoria = 4
+        sumatoria = 0
         if(len(cadena)==1):
             minimo= int(cadena)
             maximo= int(cadena)
+            sumatoria = int(cadena)
         elif(len(cadena)>1):
             numeros = cadena.split(",")
+            minimo = int(numeros[0])
+            maximo = int(numeros[0])
             for n in numeros:
+                sumatoria = sumatoria + int(n)
                 if (minimo > int(n)):
                     minimo = int(n)
                 if (maximo < int(n)):
