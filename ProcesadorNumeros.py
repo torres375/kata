@@ -8,7 +8,7 @@ class ProcesadorNumeros:
             cantidad = 1
         maximo = 0
         minimo = 0
-        sumatoria = 0
+        sumatoria = -1
         if(len(cadena)==1):
             minimo= int(cadena)
             maximo= int(cadena)
