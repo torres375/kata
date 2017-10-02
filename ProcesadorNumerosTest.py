@@ -9,7 +9,7 @@ class ProcesadorNumerosTest(TestCase):
         self.assertEqual(ProcesadorNumeros().procesar(""), result, "Cadena vacia");
 
     def test_procesar1NumeroCantidad(self):
-        result = {1, 4, 4, 0}
+        result = {1, 4, 4, 4}
         self.assertEqual(ProcesadorNumeros().procesar("4"), result, "Cadena Con Un Numero");
 
     def test_procesarCadenaDosNumerosCantidad(self):

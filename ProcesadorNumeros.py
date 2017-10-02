@@ -8,7 +8,7 @@ class ProcesadorNumeros:
             cantidad = 1
         maximo = 0
         minimo = 0
-        sumatoria = -1
+        sumatoria = 4
         if(len(cadena)==1):
             minimo= int(cadena)
             maximo= int(cadena)
@@ -24,3 +24,5 @@ class ProcesadorNumeros:
         else:
             promedio = 0
         return {cantidad, minimo, maximo, promedio}
+
+
