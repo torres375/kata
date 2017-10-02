@@ -19,5 +19,8 @@ class ProcesadorNumeros:
                     minimo = int(n)
                 if (maximo < int(n)):
                     maximo = int(n)
-        promedio = sumatoria / cantidad
+        if (cantidad > 0):
+            promedio = sumatoria / cantidad
+        else:
+            promedio = 0
         return {cantidad, minimo, maximo, promedio}
